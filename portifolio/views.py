@@ -22,3 +22,9 @@ def projetos(request):
         'projetos': lista_projetos
     }
     return render(request, 'portifolio/projetos.html', contexto)
+
+
+def contato(request):
+    pessoal = Pessoal.objects.first()
+
+    return render(request, 'portifolio/contato.html', {'pessoal': pessoal})
