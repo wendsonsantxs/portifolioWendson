@@ -62,22 +62,15 @@
 
 <div class="secao">
     <h3>Sobre Mim</h3>
-    <p>
-        Olá! Sou estudante de Sistemas de Informação na UAST/UFRPE.
-        Tenho interesse na area acadêmica de pesquisas. Busco sempre aprender novas tecnologias
-        e contribuir com projetos open source.
-    </p>
+    <p>{{ pessoal.descricao }}</p>
 </div>
 
 <div class="secao">
     <h3>Dados Pessoais</h3>
     <ul>
-        <li><strong>Nome:</strong> Wendson dos Santos Silva</li>
-        <li><strong>Curso:</strong> Bacharelado em Sistemas de Informação</li>
-        <li><strong>Período:</strong> 8º</li>
-        <li><strong>E-mail:</strong> wendson.santoss@ufrpe.br</li>
-        <li><strong>GitHub:</strong> github.com/wendsonsantxs</li>
-        <li><strong>LinkedIn:</strong> linkedin.com/in/wendsonsantxs</li>
+        <li><strong>Nome:</strong> {{ pessoal.nome }}</li>
+        <li><strong>Curso:</strong> {{ pessoal.curso }}</li>
+        <li><strong>Período:</strong> {{ pessoal.periodo }}º</li>
     </ul>
 </div>
 <!--

@@ -32,7 +32,7 @@
 {% block content %}
 <div class="contato-card">
     <h3>Vamos conversar?</h3>
-    <p>{{ pessoal.descricao }}</p>
+    <p>{{ pessoal.descricao_contato }}</p>
 
     <p><strong>E-mail:</strong> {{ pessoal.email }}</p>
 
@@ -44,6 +44,5 @@
         <a href="{{ pessoal.git }}" target="_blank">Ver Repositórios</a>
     </p>
 
-    <p><strong>Curso:</strong> {{ pessoal.curso }} ({{ pessoal.periodo }}º período)</p>
 </div>
 {% endblock %}
