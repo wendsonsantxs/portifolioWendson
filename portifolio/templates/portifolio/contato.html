@@ -1,0 +1,49 @@
+{% extends "core/base.html" %}
+
+{% block title %}Contato - Meu Portfólio{% endblock %}
+
+{% block header_title %}Entre em Contato{% endblock %}
+
+{% block extra_css %}
+.contato-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contato-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+.contato-card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contato-card a:hover {
+    text-decoration: underline;
+}
+{% endblock %}
+
+{% block content %}
+<div class="contato-card">
+    <h3>Vamos conversar?</h3>
+    <p>{{ pessoal.descricao }}</p>
+
+    <p><strong>E-mail:</strong> {{ pessoal.email }}</p>
+
+    <p><strong>LinkedIn:</strong>
+        <a href="{{ pessoal.linked }}" target="_blank">Ver Perfil</a>
+    </p>
+
+    <p><strong>GitHub:</strong>
+        <a href="{{ pessoal.git }}" target="_blank">Ver Repositórios</a>
+    </p>
+
+    <p><strong>Curso:</strong> {{ pessoal.curso }} ({{ pessoal.periodo }}º período)</p>
+</div>
+{% endblock %}
